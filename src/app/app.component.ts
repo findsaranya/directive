@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  //encapsulation:ViewEncapsulation.None
 })
 export class AppComponent {
   title = 'directive';
+  numbers = [1, 2, 3, 4, 5];
+  odd = [1,3,5];
+  even = [2,4];
+  onlyOdd = false;
+
 }
