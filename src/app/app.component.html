@@ -27,14 +27,14 @@
             {{ number }}
           </li>
         </div> -->
-        <!-- <div *ngIf="!onlyOdd">
+        <div *ngIf="!onlyOdd">
         
           <li class="list-group-item" 
           [class.bg-primary]="number%2 === 0"
           *ngFor="let number of even">
             {{ number }}
           </li>
-        </div> -->
+        </div>
 
       </ul>
       <ng-template [ngIf]="onlyOdd">
