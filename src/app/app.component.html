@@ -41,5 +41,12 @@
         <p>Only odd</p>
       </ng-template>
     </div>
+    <div [ngSwitch]="value">
+   <p *ngSwitchCase="10">value is 10</p>
+   <p *ngSwitchCase="5">value is 5</p>
+   <p *ngSwitchCase="6">value is 6</p>
+   <p *ngSwitchCase="9">value is 9</p>
+   <p *ngSwitchDefault="10">default value</p>
+    </div>
   </div>
 </div>
